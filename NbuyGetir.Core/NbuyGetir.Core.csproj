@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Aggregates\" />
+    <Folder Include="Authentication\" />
+    <Folder Include="Events\" />
+    <Folder Include="Logging\" />
+    <Folder Include="Sessions\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+</Project>
