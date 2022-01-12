@@ -26,6 +26,10 @@ namespace NbuyGetir.Domain.Models
             {
                 throw new Exception("kategori alanı boş geçilemez");
             }
+            if (category.IsTopLevel)
+            {
+                throw new Exception("top level kategori baska bir kategori altına atılamaz.");
+            }
             _subCategories.Add(category);
         }
         public void AddSubProduct(Product product)
